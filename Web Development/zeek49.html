@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JavaScript</title>
+</head>
+<body>
+    <div id="heading"></div>
+    <h1> Lorem ipsum, dolor sit amet consectetur adipisicing elit.  </h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eius maiores nam doloremque officiis beatae consectetur voluptatibus fugiat illum consequatur? </p>
+    <p>In this webpage we have learn about how to deal with strings, how <strong>${variable}</strong> works, how to see length of variable, also how to add a particular string in html page like this one.See h3 heading. </p>
+    <script>
+        var string="Zee'k";
+        var name='a"Khan';
+        var story="In IT";
+        var message="He is  good in coding";
+        var temp=`${string} is a 'nice' person "and" he is good ${story} as well as ${message} `;
+        
+        console.log(string + name + message);
+        console.log(temp);
+       
+        var len= name.length;
+        console.log(`Length of var name is ${len}` );
+
+        console.log("Hello \n Zeeshan \t I am seeing effect of \\n and \\t")
+
+        document.getElementById('heading').innerHTML="<h3>  This heading of h3 is added by javascript into this html page. </h3> "
+    </script>
+    
+</body>
+</html>

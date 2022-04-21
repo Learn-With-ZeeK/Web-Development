@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorials</title>
+</head>
+<body>
+    <h1>JSON in JavaScript</h1>
+    <p> It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa).</p>
+    <p><ul>Following steps to manipulate object entries
+        <li>Converting object into string using JSON.stringify</li>
+        <li>Manipulating Strings by replace,slice,etc.</li>
+        <li>Converting Strings into object by JSON.parse</li>
+    </ul></p>
+    
+</body>
+<script>
+    let jsonObj={
+        name:"Zeeshan",
+        id:"23",
+        graduate:"B.tech",
+        food:"Chicken"
+    }
+    console.log(jsonObj);
+    console.log ('jsonObj is an object in JavaScript.');
+    
+    //Converting object into string using JSON.stringify
+    let jsonStr= JSON.stringify(jsonObj);
+    console.log(jsonStr);
+    console.log("jsonStr is string in JavaScript");
+
+    //Manipulating Strings by replace,slice,etc.
+   let myjsonStr1=jsonStr.replace("Zeeshan","Khan");
+   let myjsonStr2=myjsonStr1.replace("Chicken","Paneer")
+    console.log(myjsonStr2);
+
+    //Converting Strings into object by JSON.parse
+    newJsonObj= JSON.parse(myjsonStr2);
+    console.log(newJsonObj);
+</script>
+</html>

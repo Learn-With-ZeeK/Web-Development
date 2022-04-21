@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in JavaScript</title>
+</head>
+
+<body>
+    <h1>Arrays and Objects in JavaScript</h1>
+    <p>This is my body.For JavaScript please right click on body then click on inspect and Go to console.</p>
+    <ul>Codes written in console of JS and their reply after:
+        <li>names[10]:
+            undefined
+        </li>
+        <li>names[2]:
+            3</li>
+        <li>Rollno[7]:
+            undefined</li>
+        <li> Rollno[6]:
+            "This is pushed"</li>
+        <li>Rollno.length:
+            7</li>
+        <li>employee.length:
+            undefined</li>
+        <li>employee.company:
+            "Capgemini"</li>
+    </ul>
+    <p>Array and object basic difference?
+        <strong style="display: block;">
+            When you need to depend on the order of the elements in the collection, use Arrays</strong>
+    <h4>When order is not important, use objects.Order is not guaranteed in objects, but they provide for fast key-value
+        pair lookups.For Example- employee.company:
+        "Capgemini" but employee[4]:undefined</h4>
+    </p>
+    <p>
+    <ul>Different ways to create array 
+        <li>let names=[41,2,3,4,"Zeeshan",undefined];</li>
+        <li> let Rollno = new Array(41,2,3,4,"zeek",undefined);</li>
+    </ul>
+    </p>
+    <script>
+
+        let employee = {
+            name: "Zeeshan",
+            salary: 50,
+            blog: "zeek.html",
+            company: 'Capgemini',
+        }
+        console.log("This is employee object");
+        console.log(employee);
+
+        //Array is special type of object where we can select element by order.
+
+
+        var a = " \n\ Now we are dealing with names array";
+        console.log(a);
+        let names = [41, 2, 3, 4, "Zeeshan", undefined];
+        console.log(names);
+        console.log("The first element of order [0] is: " + names[0]);
+        console.log("The second element of order [1] is: " + names[1]);
+
+        var b = "\n\ Now dealing with roll no array";
+        console.log(b);
+        let Rollno = new Array(41, 2, 3, 4, "zeek", undefined);
+        console.log(Rollno);
+        console.log("The length of this array is:" + Rollno.length);
+        Rollno = Rollno.sort();
+        Rollno.push("This is pushed");
+
+        console.log("\n\ The array below is rollno array after pushing and sorting");
+        console.log(Rollno);
+
+
+
+    </script>
+</body>
+
+</html>

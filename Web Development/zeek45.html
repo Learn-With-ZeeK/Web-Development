@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query and CSS Grid</title>
+    <style>
+        .container {
+            display: none
+        }
+
+        .item {
+            background-color: rgb(162, 240, 169);
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        @media (max-width:350px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: "navbar navbar navbar"
+                    "section section section"
+                    "aside aside aside"
+                    "footer footer footer ";
+            }
+
+            #navbar ul li a {
+                text-decoration: none;
+                margin: 5px;
+                font-size: 10px;
+            }
+
+            .item {
+                background-color: rgb(253, 200, 200);
+                padding: 20px;
+                border-radius: 20px;
+            }
+
+        }
+
+        @media (min-width:350px) and (max-width:640px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: "navbar navbar navbar"
+                    "section section section"
+                    "aside aside aside "
+                    "footer footer footer ";
+            }
+
+            #navbar ul li a {
+                text-decoration: none;
+                margin: 5px;
+                font-size: 15px;
+            }
+
+            .item {
+                background-color: rgb(165, 210, 252);
+                padding: 20px;
+                border-radius: 20px;
+            }
+
+        }
+
+        @media (min-width:640px) and (max-width:1000px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: "navbar navbar aside"
+                    "section section aside"
+                    "footer footer footer ";
+            }
+
+            #navbar ul li a {
+                text-decoration: none;
+                margin: 10px;
+                font-size: 25px;
+            }
+
+            .item {
+                background-color: rgb(197, 252, 165);
+                padding: 20px;
+                border-radius: 20px;
+            }
+        }
+
+        @media (min-width:1000px) and (max-width:10000px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: "navbar navbar aside"
+                    "section section aside"
+                    "footer footer aside";
+            }
+
+            #navbar ul li a {
+                text-decoration: none;
+                margin: 25px;
+                font-size: 40px;
+            }
+
+            .item {
+                background-color: rgb(250, 244, 191);
+                padding: 20px;
+                border-radius: 20px;
+            }
+        }
+
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #footer {
+            grid-area: footer;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        /* #navbar ul li a {
+            text-decoration: none;
+            margin: 5px;
+            font-size: 10px;
+        } */
+
+        #navbar ul li a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <ul>
+                <li><a href="">Home</a> </li>
+                <li><a href="">About Us</a> </li>
+                <li><a href="">Contact </a></li>
+                <li><a href="">Settings</a> </li>
+            </ul>
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vitae aspernatur sed nulla aperiam
+            dolores ipsam quis, delectus, itaque nesciunt neque velit commodi rerum enim magni inventore quam numquam
+            officiis obcaecati voluptas nihil doloribus vero. Ab, distinctio nam modi ut nesciunt, reprehenderit
+            corporis praesentium fugiat similique, quas qui doloremque. Facilis consequatur iure blanditiis, nostrum
+            atque magni unde modi odit tenetur voluptate nobis? Aperiam commodi blanditiis ad facilis perferendis ut
+            quibusdam, totam qui quis in consectetur voluptas aut numquam excepturi sapiente quas fugiat quae quos
+            dolores soluta voluptate quia impedit veritatis? Repellendus voluptatibus explicabo assumenda expedita odit
+            voluptatem possimus animi delectus.
+        </div>
+        <div id="aside" class="item">
+            MORE ABOUT US
+        </div>
+        <div id="footer" class="item">
+            COPYRIGHT ZEEK@2021
+        </div>
+    </div>
+</body>
+
+</html>

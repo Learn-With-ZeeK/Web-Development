@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert,Prompt and Confirm</title>
+    <style>
+        strong{display: block;}
+        h2{font-size: 100px;}
+    </style>
+</head>
+<body>
+  <h1>Use of alert(),prompt() and confirm()</h1> 
+  <p> <strong> What is the use of alert in JavaScript?</strong>
+    The alert() method in JavaScript displays an alert dialog box that consists of some specified message (which is optional) and an OK button. When the dialog box pops up, we have to click "OK" to proceed.
+</p> 
+
+<p> <strong>What does function prompt () do?</strong>
+    The prompt() method is used to display a dialog with an optional message prompting the user to input some text</p> 
+
+    <p> <strong>What is confirm method?</strong>
+       
+
+The confirm() method is used to display a modal dialog with an optional message and two buttons, OK and Cancel. It returns true if the user clicks “OK”, and false otherwise.</p> 
+
+<h2>Create a JavaScript which asks your age and welcomes you for age 18 or more.</h2>
+<script>
+    // How alert works?
+    // alert("This is a message we got by using alert.");
+
+//     How prompt works and gets displayed in JS?
+//    let name= prompt("What is your name?", "Player1");
+//     console.log(name);
+
+
+// let deletePost=confirm("Do you want to delete your post?")
+// if(deletePost){console.log("Post is deleted")}
+// else{console.log("Post is not deleted")}
+
+let age=prompt("Enter your age:");
+
+
+if(age>=18){alert("Your age is more than 18.Welcome to the club.Your age is:" +age)}
+else{alert("Your age is less than 18.NOT ALLOWED.Your age is:" +age)}
+console.log(age);
+</script>
+</body>
+</html>

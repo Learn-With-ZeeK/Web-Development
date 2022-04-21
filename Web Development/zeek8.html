@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!-- Different types of input formats are text,number,email,checkbox(Are you eligible:[]),radio(Gender:Male or Female),Date,Submit and Textarea(Write about yourself) and label and select and option  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>HTML forms with different Inputs</h1>
+    <form action="backend.php">
+        <div>
+            Name:<input type="text"name="myName">
+        </div>
+        <br>
+        <div>
+            Role:<input type="text"name="myRole">
+        </div>
+        <br>
+        <div>
+            Email:<input type="email"name="myEmail">
+        </div>
+        <br>
+        
+        <div>
+            Date:<input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+           Bonus:<input type="number"name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible:<input type="checkbox"name="myEligibility">
+        </div>
+        <br>
+        <div>
+            Gender:<br>Male<input type="radio"name="mygender"><br>Female<input type="radio"name="mygender"><br>Other<input type="radio"name="mygender">
+        </div>
+        <br>
+        <div>
+            Write about yourself:<br><textarea name="myInfo"cols="200"rows="10" ></textarea>
+        </div>
+        <br>
+       
+         <div>
+             <label for="car">Car</label>
+                 <select name="myCar" id="car">
+                    <selected><option name="swf">SWIFT</option></selected>
+                    <option name="Ind">Indica</option>
+
+                 </select>
+            
+         </div>
+         <br>
+         <div>
+            <input type="submit"name="mySubmit">
+            <input type="reset"name="myReset">
+
+         </div>
+         <br>
+        
+
+
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions in JS</title>
+</head>
+<body>
+    <h1>Arrow Functions</h1>
+    <p>Arrow functions allow us to write shorter function syntax.Which means syntax is small</p>
+    
+</body>
+<script>
+
+    //First we define function then we use it
+    function sum(a,b,c){
+        console.log("....................")
+        d=a+b+c;
+        return d;  //After return no code  will be executed.
+    }
+    let returnValue = sum(1,2,30);
+    console.log("The sum of these numbers are: "+returnValue)
+
+    //Using arrrow function
+
+    let sum1= (a,b,c) => a+b+c;
+    //on console write sum1(4,7,8) you will get 19.
+
+    let half= a =>a/2;
+    //on console write half(6) you will get 3.
+
+    //Understand this by w3.schools or javatpoint
+let obj1={
+    greeting:"Hello!",
+     names:["Zeeshan","Nida","Kashif","Mummy"],
+    speak(){
+      this.names.forEach((student)=>{
+      console.log(this.greeting+" GOOD MORNING "+student)
+      });// ) bracket is forEach(.... and } is for closing of{}
+    }
+}
+obj1.speak();
+    </script>
+</html>

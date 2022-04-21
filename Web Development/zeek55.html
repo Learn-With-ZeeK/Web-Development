@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+    <style>
+        strong{font-size: 20px;color: blue;margin: 10px;}
+    </style>
+</head>
+<body>
+    <h1>for,while and other JS Loops.</h1>
+    <p>WE can use loop to itterate array by two methods by one by <strong>for(index=0;index<(abc.length);index++){}</strong> and another using <strong>for(elements of abc ){} loop.</strong> </p>
+    <p> We can itterate object by <strong>for(key in abc){}.</strong> </p>
+
+</body>
+<script>
+    let num=0;
+    for(num=0;num<3;num++){
+        console.log(num)
+    }//Output of this for loop is 0,1,2.
+
+     let friends=["Sachin","Nidhaan","Ashish","Avinash","Sudhanshu"];
+    
+     //WE can use loop to itterate array by index<(abc.length).
+    let index=0;
+    for(index=0;index<friends.length;index++){
+        console.log(friends[index])
+    }
+
+    //WE can use loop to itterate array using for( of ) loop.
+    for(elements of friends){
+        console.log("Hey friend "+elements+" was added through JS. ")
+    }
+
+    let employee = {
+        name: "Zeeshan",
+        salary: 50,
+        blog: "zeek.html",
+        company: 'Capgemini',
+    }
+    // We can itterate object by for(key in abc).
+    for(key in employee){
+        console.log(`My ${key} is ${employee[key]} `)
+    }
+
+    //while loop.
+    let i=0;
+    while(i<4){
+        console.log(`${i} is less than 4`);
+        i++;
+    }
+    
+
+   
+</script>
+</html>

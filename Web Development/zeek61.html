@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Function</title>
+</head>
+<body>
+   <h1>Math Functions</h1> 
+  <p>The JavaScript Math object allows you to perform mathematical tasks on numbers.The syntax for any Math property is :<strong>Math.property</strong>.For Example: <em>[Math.pow(),Math.sqrt(),Math.abs(),Math.sin(),Math.cos(),Math.min(),Math.max(),Math.random()]</em>  </p> 
+  <p>Also Number to Integer
+      <ul>There are 4 common methods to round a number to an integer:
+          <li>  <strong>Math.round(x)</strong>....Returns x rounded to its nearest integer</li>
+          <li><strong>Math.ceil(x)</strong>....Returns x rounded up to its nearest integer</li>
+          <li><strong>Math.floor(x)</strong>....Returns x rounded down to its nearest integer</li>
+          <li><strong>Math.trunc(x)</strong>....Returns the integer part of x (new in ES6)</li>
+      </ul>
+  </p>
+  
+  <ul>JavaScript provides 8 mathematical constants that can be accessed as Math properties:
+      <li> <strong> Math.E</strong> // returns Euler's number</li>
+      <li><strong>Math.PI  </strong>// returns PI</li>
+      <li><strong>Math.SQRT2  </strong>// returns the square root of 2</li>
+      <li><strong>Math.SQRT1_2  </strong>// returns the square root of 1/2</li>
+      <li><strong>Math.LN2</strong>// returns the natural logarithm of 2</li>
+      <li><strong>Math.LN10   </strong> // returns the natural logarithm of 10</li>
+      <li><strong>Math.LOG2E </strong>// returns base 2 logarithm of E</li>
+      <li><strong>Math.LOG10E </strong>// returns base 10 logarithm of E</li>
+ </ul>
+</body>
+<script>
+    let m= Math;
+    console.log(m);
+
+    console.log("The value of Math.E is: "+Math.E );
+    console.log("The value of Math.PI is: "+Math.PI );
+    console.log("The value of Math.SQRT2 is: "+Math.SQRT2  );
+    console.log("The value of Math.SQRT1_2 is: "+Math.SQRT1_2  );
+    console.log("The value of Math.LN2 is: "+Math.LN2 );
+    console.log("The value of Math.LN10 is: "+Math.LN10  );
+    console.log("The value of Math.LOG2E is: "+Math.LOG2E );
+    console.log("The value of Math.LOG10E is: "+Math.LOG10E  );
+
+    //Rounding Integers
+    let a=24.7;
+    console.log("Value of a is: "+a);
+    console.log("Math.round(a) is: "+Math.round(a));
+    console.log("Math.ceil(a) is: "+Math.ceil(a));
+    console.log("Math.floor(a) is: "+Math.floor(a));
+    console.log("Math.trunc(a) is: "+Math.trunc(a));
+
+    //Raise to the power
+  console.log("Value of 3 to the power 2 is: "+Math.pow(3,2));
+
+  //Square Root
+  console.log("Value of square root of 10 is: "+ Math.sqrt(10));
+
+//Absolute value  means positive like mod.
+console.log("The absolute value of -4 is: "+ Math.abs(-4));
+
+//Trigonometric Functions
+console.log("Value of sin(3) is:"+Math.sin(3));
+console.log("Value of cos(3) is:"+Math.cos(3));
+console.log("Value of tan(3) is:"+Math.tan(3));
+
+//Maximum and Minimum
+console.log("The max value of 4,6,8,18,34,2,1,7:  "+Math.max(4,6,8,18,34,2,1,7));
+console.log("The min value of 4,6,8,18,34,2,1,7:  "+Math.min(4,6,8,18,34,2,1,7))
+
+
+console.log("Random no. between 0 and 1 is: "+Math.random())
+//Generating Random Numbers
+let a1=50;
+let b1=60;
+r1= a1+ (b1-a1)*Math.random();
+
+console.log("Random no. between 50 and 60 is: "+r1)
+</script>
+</html>

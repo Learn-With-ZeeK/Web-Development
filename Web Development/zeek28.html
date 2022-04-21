@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FlexBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        .container{height: 500px;width: 100%;border: black solid 2px;
+       
+        /* display:flex- is a one dimensional layout method for laying out items in rows or columns.
+        By default direction is in row.  */
+        /* flex-direction: row; The elements are in row format from left. */
+        /* flex-direction: row-reverse;The elements arranged in reverse order from right*/
+        /*flex-direction: column; The elements are in column format from top left. */
+         /*flex-direction: column-reverse;The elements are in reverse column format from bottom left to top */
+             display: flex;     
+             flex-direction: row;    
+            flex-direction: row-reverse;
+            flex-direction: column;    
+            flex-direction: row;
+     /*If there is contradiction like row ,row-reverse,column,column-reverse,row direction then which comes latest<row> is applied*/
+     
+        /* FLEX WRAP COMMANDS */
+     /*flex-wrap: wrap;When we minimise web page size the text wraps itself.By default flex wrap is none */
+     /*flex-wrap: wrap-reverse;When we minimise web page size the text wraps itself in reverse order*/
+            flex-wrap: wrap-reverse;
+            flex-wrap: wrap;
+     /*If there is contradiction like wrap and wrap-reverse then which comes  latest<wrap>  is applied or used*/
+        
+        /* FLEX-FLOW COMMANDS */
+    /* flex-flow: row wrap;combines flex direction<row> and flex wrap<wrap> in one*/
+            flex-flow: row wrap;
+
+    /*JUSTIFY CONTENT COMMAND*/
+    /*Justify content helps controls positioning in horizontal direction.*/
+    /*justify-content: center;position of boxes is center in horizontal direction*/
+    /*justify-content: space-between;There is equal space between each box in horizontal direction.*/
+    /*justify-content: space-evenly;There is equal space between each box as well as box and border in horizontal direction.*/
+    /*justify-content: space-around;Space between each box is 2 times space between box and border*/
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            justify-content: center;
+     /*Which comes latest<center> is applied*/  
+        
+     /* ALIGN ITEM COMMANDS */
+     /*align-items: center;position of boxes is center in vertical direction*/
+     /*align-items: stretch;when you stretch there is vertcally even space*/
+     align-items: center;
+     align-items: stretch;
+     align-items: center;
+     /*Which comes latest<center> is applied*/
+     }
+    /*ORDER COMMAND*/
+    /* Hihger order more late box appears among boxes default order 0 therefore item2,Second box comes last
+    #item2{order: 2;}
+    #item1{order: 1;} */
+
+    /*flex-grow means occupies more space for more value of flex grow*/
+    /*flex-shrink means more flex-shrink faster shrinking*/
+    /* *item1{flex-shrink: 1000;} */
+
+    /* flex basis you can <control width when flex direction row>.<control height  when flex direction column>
+    #item3{flex-basis: 320px;} */
+
+    /*Syntax for Flex.flex:flex-grow  flex-shrink  flex-basis*/
+        .box{border: blue solid 1px;background-color: rgb(138, 138, 243);width:150px;height:400px ;}
+
+        li{font-size: 20px;color: brown;background-color: rgb(247, 201, 201);border: black solid 1px;padding-right: 20px;} 
+    h3{color: red;font-size: 30px;font-family: 'Ubuntu', sans-serif;padding-right: 10px;}   
+     ul{border:3px solid green; background-color: rgb(162, 240, 162);width: 96%;display:flex;clear: both;font-family: 'Ubuntu', sans-serif;} 
+     h1{text-align: center;color: blue;font-family: 'Ubuntu', sans-serif;} 
+     strong{color: #455bd6;font-family: 'Ubuntu', sans-serif;} 
+</style>
+</head>
+<body>   
+    <!-- .container#item$*6 means -->
+    <!-- <div class="container" id="item1"></div>
+         <div class="container" id="item2"></div>
+         <div class="container" id="item3"></div>
+         <div class="container" id="item4"></div>
+         <div class="container" id="item5"></div>
+         <div class="container" id="item6"></div> -->
+    <div class="container">
+    <div class="box" id="item1">First Box</div>
+    <div class="box" id="item2">Second Box</div>
+    <div class="box" id="item3">Third Box</div>
+    <div class="box" id="item4">Fourth Box</div>
+    <div class="box" id="item5">Fifth Box</div>
+    <div class="box" id="item6">Sixth Box</div>
+</div>
+<div class="info">
+<h1>DISPLAY:FLEX FOR CONTAINER</h1>
+<ul>
+   <h3> FLEX-DIRECTION COMMANDS</h3> 
+    <li><strong>Display:flex</strong> - is a one dimensional layout method for laying out items in rows or columns.
+        By default direction is in row.  </li> 
+    <li><strong>flex-direction: row;</strong> The elements are in row format from left. </li>
+    <li><strong>flex-direction: row-reverse;</strong>The elements arranged in reverse order from right.</li>
+    <li><strong>flex-direction: column;</strong>   The elements are in column format from top left.</li>
+    <li><strong>flex-direction: column-reverse;</strong> The elements are in reverse column format from bottom left to top. </li>
+    <li><strong></strong>If there is contradiction like row ,row-reverse,column,column-reverse,row direction then which comes<strong> latest (row)</strong>  is applied.</li>
+</ul>
+<ul>
+<h3>FLEX-WRAP COMMANDS</h3>
+<li> <strong>flex-wrap: wrap;</strong>When we minimise web page size the text wraps itself.By default flex wrap is none .</li>
+<li><strong>flex-wrap: wrap-reverse;</strong> When we minimise web page size the text wraps itself in reverse order.</li>
+<li>If there is contradiction like wrap and wrap-reverse then which comes <strong>latest </strong>  is applied or used.</li>
+</ul>
+<ul>
+    <h3>FLEX-FLOW COMMANDS</h3>
+    <li><strong>flex-flow:row wrap;</strong> combines flex direction(row) and flex wrap(wrap) in one.</li>
+    
+</ul>
+<ul>
+    <h3>JUSTIFY CONTENT COMMAND</h3>
+    <li>  <strong>Justify content </strong> helps controls positioning in<strong> horizontal direction.</strong> </li>
+    <li><strong>justify-content: center;</strong>position of boxes is center in horizontal direction.</li>
+    <li><strong>justify-content: space-between;</strong>There is equal space between each box in horizontal direction.</li>
+    <li><strong>justify-content: space-evenly;</strong>There is equal space between each box as well as box and border in horizontal direction.</li>
+    <li><strong>justify-content: space-around;</strong>Space between each box is 2 times space between box and border.</li>
+   <li>Which comes<strong> latest(center)</strong> is applied.</li>
+</ul>
+<ul>
+    <h3>ALIGN ITEM COMMANDS</h3>
+    <li><strong>align-items: center;</strong>position of boxes is center in vertical direction.</li>
+    <li><strong>align-items: stretch;</strong>when you stretch there is vertcally even space.</li>
+    <li>Which comes<strong> latest(center)</strong> is applied.</li>
+</ul>
+</div>
+<div class="inform">
+    <h1>ORDER,FLEX-GROW,FLEX-SHRINK AND FLEX BASIS FOR IDS OR ELEMENTS.</h1>
+    <ul>
+        <li><strong>Hihger order</strong>  more <strong>late</strong> box appears among boxes default order 0 therefore item2,Second box comes last.
+           <strong> #item2{order: 2;}
+            #item1{order: 1;}</strong> </li>
+        <li><strong>flex-grow</strong> means occupies more space for more value of flex grow.</li>
+        <li> <strong>flex-shrink</strong>  means more flex-shrink faster shrinking.
+            <strong>*item1{flex-shrink: 1000;} </strong></li>
+        <li> <strong>flex basis</strong>  you can (control width when flex direction row)(control height  when flex direction column).
+            <strong>#item3{flex-basis: 320px;} </strong></li>
+        <li>  Syntax for <strong>Flex.{flex:flex-grow  flex-shrink  flex-basis}</strong></li>
+    
+    </ul>
+</div>
+</body>
+</html>

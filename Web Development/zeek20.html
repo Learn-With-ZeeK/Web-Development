@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model,Margin and Padding</title>
+</head>
+<style>
+    .container{background-color: cyan;
+               border: 5px solid red;
+               
+               /* This command will give margin to all 4 sides 4px.Margin is space given outside border
+               margin: 4px;  */
+               
+               /* This command will give padding to all 4 sides 25px.Padding is space given inside border and between element
+               padding: 25px;  */
+            
+               border-radius: 172px;
+
+            /* These commands will give padding the way they say.Margin commands work the same way */
+            /* padding-left: 12px;
+               padding-right: 18px;
+               padding-top: 10;
+               padding-bottom: 45px; */
+
+            /* These commands give margin in order top,,right,bottom,left.Margin commands work the same way */
+            /*  padding: 20px 30px 40px 150px; */
+ 
+            /* These commands give padding and margin in order top/bottom,left/right order that means top and bottom same also left and right same */
+            padding: 48px 200px; 
+            margin: 16px 150px;
+            width: 1168px;  
+           
+            /* After giving width we see that after increasing padding width also increase to sort this issue we use box-sizing: border-box*/
+             box-sizing: border-box;}
+</style>
+
+<body style="background-color: teal;">
+
+    <h1 style="color: blue; background-color:rgb(0 226 232); width:700px; margin-left:280px;">Play With Padding,Margin,Width and BoxSizing</h1>
+    
+    <div class="container">
+        <h4>This is my heading</h4>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione rerum nulla adipisci iste voluptatum
+            alias, eius nostrum consequatur aperiam eaque odit aut impedit.</p>
+    </div>
+    
+    <div class="container">
+        <h4>This is my heading</h4>
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione rerum nulla adipisci iste voluptatum
+            alias, eius nostrum consequatur aperiam eaque odit aut impedit.</p>
+    </div>
+    
+    <div class="container">
+        <h4>This is my heading</h4>
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione rerum nulla adipisci iste voluptatum
+            alias, eius nostrum consequatur aperiam eaque odit aut impedit.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes</title>
+    <style>
+        .container {
+            height: 250px;
+            background-color: yellowgreen;
+        }
+
+        .box {
+            height: 250px;
+            width: 300px;
+            background-color: green;
+            animation-name: zeek1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;}
+        @keyframes zeek1 {
+           from {width:300px ;}
+           to{width: 1000px;}
+            
+        }
+        .anime{height: 250px;
+            width: 250px;
+            background-color: rgb(255, 47, 47);
+            animation-name: zeek2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        @keyframes zeek2{
+            0% {top: 0;left:0;}
+            25%{top: 250px;left:0;}
+            50%{top: 250px;left:250px;}
+            75%{top: 0;left:250px;}
+            100%{top: 0;left:0;}
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+    <div class="anime">
+        this is another box
+    </div>
+
+</body>
+
+</html>

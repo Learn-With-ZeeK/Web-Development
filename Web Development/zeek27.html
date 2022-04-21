@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+     <style>
+         /* visibility:hidden means you cannot see it but ther is an empty space.Whereas in display:none the empty space is filled by next element */
+         .box{height: 150px;width: 150px;border: black solid 2px;}
+         #box1{background-color: blue;visibility: hidden;}
+         #box2{background-color: red;}
+         #box3{background-color:green;}
+         #box4{background-color: yellow;position: relative;top: 78px;z-index: 35;}
+         #box5{background-color: rgb(255, 0, 212);position: relative;top: 45px;z-index: 32;}
+         #box6{background-color: rgb(119, 0, 255);position: relative;top:23px;z-index: -1;}
+         #box7{background-color: rgb(0, 255, 42);position: relative;top: 10px;z-index: -32;}
+         #box8{background-color: rgb(255, 166, 0);position: relative;top: 10px;z-index: -34;}
+         /* Z-index does not work for default(static) position you have to set absolute,relative,fixed or sticky.More z-index means more priority in overlap i.e will appear when overlap occurs */
+        
+        .original{position: absolute;
+           top: 1px;
+        right: 4px;}
+         #box-1{background-color: blue;}
+         #box-2{background-color: red;}
+         #box-3{background-color:green;}
+         #box-4{background-color: yellow;}
+         #box-5{background-color: rgb(255, 0, 212);}
+         #box-6{background-color: rgb(119, 0, 255);}
+         #box-7{background-color: rgb(0, 255, 42);}
+         #box-8{background-color: rgb(255, 166, 0);}
+     </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+    <div class="box" id="box7"></div>
+    <div class="box" id="box8"></div>
+
+    <h1>Right side is original position before visibility or z index</h1>
+    <ul>
+    <li>Yellow(z-index:35)wins overlap with pink(z-index:32)</li>
+    <li> 35>32</li>
+    <li>Pink(z-index:32)wins overlap with purple(z-index:-1)</li>
+    <li>32>(-1)</li>
+    <li>Purple(z-index:-1)wins overlap with light green(z-index:-32)</li> 
+    <li>(-1)>(-32)</li>
+    <li>light green(z-index:-32)wins overlap with golden yellow(z-index:-34)</li>
+    <li>(-32)>(-34)</li> </ul>
+    <div class="original">
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+    <div class="box" id="box-5"></div>
+    <div class="box" id="box-6"></div>
+    <div class="box" id="box-7"></div>
+    <div class="box" id="box-8"></div>
+</div>
+</body>
+</html>

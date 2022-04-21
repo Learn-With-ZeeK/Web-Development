@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Tough Web Learn by doing. -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+
+     h1{padding-left: 600px;
+    color: green;}
+
+    .navBar{
+    background-color: rgb(165, 165, 223);
+    padding: 1px 10px;
+    border-radius: 15px; }
+         
+    .navBar ul{overflow: auto;}
+        
+    .navBar li{float: left;
+    list-style-type: none;
+    margin: 2px 10px; }
+
+    .navBar li a{text-decoration: none;
+    color: rgb(8, 23, 235);
+    font-weight: bold;
+    font-size: 23px;}
+        
+    .navBar li a:hover{background-color: yellow;
+    color: rgb(104, 16, 0);}
+
+    
+    .search{float: right;
+    padding-right: 100px;}
+       
+    #mySearch {padding: 7px;
+    color: rgb(255, 47, 47);
+border-radius: 10px; border: cornsilk solid 1px;}
+        
+       
+    </style>
+</head>
+<body>
+   <h1>Zeek Nav Bar</h1>
+   <header><!-- The <header> HTML element represents introductory content, typically a group of introductory or navigational aids.It may    contain some heading elements but also a logo, a search form, an author name, and other elements -->
+    
+    <nav class="navBar" >
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Services</a> </li>
+            <li> <a href="#"> Contact us</a></li>
+            <div class="search">
+                <input type="text"id="mySearch"placeholder="Search this web">
+            </div>
+
+        </ul>
+
+    </nav>
+</header>
+</body>
+</html>

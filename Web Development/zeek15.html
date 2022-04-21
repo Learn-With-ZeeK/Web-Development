@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        p {border: 2px solid red;}
+
+         /* Id Selector */
+        #firstPara {color: peru;}
+        
+        /* Id Selector */
+        #secondPara {color: red;}
+         
+        /* Id Selector */
+        #thirdPara {color: slateblue; }
+         
+        /* Class Selector */
+        .backgroundBlue {background-color: rgb(0, 255, 242);}
+
+       /* Grouping Selector    */
+        footer,span{color: violet;}
+    
+    </style>
+</head>
+
+<body>
+    <h3>CSS SELECTORS</h3>
+     <!-- We can have one name for one id we named each para by id name and then used # in title to define id in style tag.We made class for giving same property to multiple elements and use . in style tag to give specifications to class -->
+
+    <p id="firstPara" >This is a simple paragraph to demonstrate selectors</p>
+
+
+    <p id="secondPara" class="backgroundBlue">This is another simple paragraph to demonstrate selectors</p>
+
+    <div>
+        <p id="thirdPara" class="backgroundBlue">This is another simple paragraph but inside div to demonstrate selectors</p>
+    </div>
+     
+    <span>This is span</span> <br>
+    <footer>This is footer</footer>
+
+</body>
+
+</html>

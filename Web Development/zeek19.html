@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <style>
+        #firstPara{color: red;
+                height: 100px;
+                width: 300px;
+                background-color: yellow;
+                /* border-color: violet;
+                border-style: solid;
+                border-radius: 16px;    } */
+                border: 16px solid violet;}
+       
+        #secondPara{color: red;
+                height: 100px;
+                width: 300px;
+                background-color: greenyellow;
+                border-top: 6px solid green ;
+                border-left: 3px solid orange ;
+                border-right: 9px solid blue;
+                border-bottom: solid 12px pink;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 23px;}
+      
+        #thirdPara{color: red;
+                height: 600px;
+                width: 600px;
+            background-image: url(https://www.codewithharry.com/assets/img/logo.png);
+            background-color: pink;
+            /* background-repeat:repeat-y ;
+            background-repeat:repeat-x ;*/    /* These commands image will repeat in Yaxis and Xaxis respectively*/
+            background-repeat: no-repeat;
+            /* background-position-x: 400px;
+            /* background-position-y: 300px; ( position of image on basis of x and yaxis ) */
+           
+            /* background-position:center center;     (position of image on basis of location w.r.t height and width) */
+            background-position:top center ;
+
+            }
+    </style>
+</head>
+<body>
+    <h4>Border and Background attributes </h4>
+    <p id="firstPara">This is my first para.</p>
+    <p id="secondPara"">This is my second para.</p>
+    <p id="thirdPara"">This is my third para.</p>
+    
+</body>
+</html>

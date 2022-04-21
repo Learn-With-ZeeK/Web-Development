@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+  <style>
+      html{
+          font-size: 25px;
+         
+           }
+      .container{font-size:10px;
+                border: brown solid 2px;
+                
+                height: 100vh;
+                 /* vh means viewport height that is full height of webpage.100vh means 100% height 0f webpage.  */
+                
+                 width: 100vw;
+                /* vh means viewport width that is full width of webpage.100vh means 100% width 0f webpage}*/
+                }
+      h1{text-align: center;}
+      
+      #firstHeading{
+                font-size: 4em;
+                 /* font-size is 4em which means font size is 4 times font-size of container(4*10=40px). */
+                   
+                 padding: 2em; 
+                    /* padding is 2em which means padding is 2 times font-size  of firstHeading(latest size)(2*40=80px) */
+                  }
+    #secondHeading{
+                   font-size:3rem;
+                   /* font-size is 3rem which means font size is 3 times font-size of html(3*25=75px). */
+                
+                   padding: 3rem;
+                   /* padding is 3rem which means padding is 3 times font-size  of html(3*25=45px) */
+            }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <h1 id="firstHeading">This is first heading.</h1>
+    <h1 id="secondHeading">This is second heading.</h1>
+    <h1 id="thirdHeading">This is third heading.</h1>
+
+</div>
+</body>
+</html>

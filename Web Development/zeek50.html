@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in JavaScript</title>
+</head>
+<body>
+
+
+    <script>
+        var str="This is my string for JS.";
+        console.log(str);
+
+        //First occurence of substring starting from 0 which is T in my str.
+        var position= str.indexOf('is');
+        console.log("First occurence of 'is' in my string starting from 0 is: "+position);
+
+        //Last occurence of substring starting from 0 which is T in my str.
+        var position=str.lastIndexOf('is');
+        console.log("Last occurence of 'is' in my string starting from 0 is: "+position);
+
+        // Getting a substring from a string
+        var substrg= str.slice(1,9);
+        console.log("Slicing string from position 1 to 9  appears as: "+substrg);
+
+        // Replacing a word from string.
+        var replaced=str.replace('string','Zeek');
+        console.log('Old string:'+ str);
+        console.log('Replaced string:'+ replaced);
+
+        //UpperCase and LowerCase appearance of string.
+        var upperCase= str.toUpperCase(str);
+        console.log('String in Upper Case is:'+upperCase);
+
+        var LowerCase= str.toLowerCase(str);
+        console.log('String in Lower Case is:'+LowerCase);
+
+        //Trimming function in JS
+       var strAtWhiteSpaces='             This is my string with white spaces      '
+        console.log('Without trimming:'+ strAtWhiteSpaces )
+        console.log('With trimming:'+ strAtWhiteSpaces.trim())
+
+        //Getting character from position
+        console.log("Character at position 5 starting from 0 is: "+ str[5])
+    </script>
+</body>
+</html>

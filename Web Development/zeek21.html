@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tutorial:Float and Clear</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+    *{box-sizing:border-box ;}
+        
+      body{font-family:'Righteous', cursive;
+    } 
+     .container{border:3px solid rgba(0, 63, 0, 0.863);
+                width: 900px;
+                margin: 40px auto;
+                padding: 5px 3px;
+                background-color:rgba(245, 208, 184, 0.596) ; 
+                border-radius: 21px;   
+     }
+     .item{border:3px solid rgb(221, 17, 78);
+           padding: 5px 13px; 
+           margin: 6px 8px;
+            background-color:rgb(255 243 218) ;
+            border-radius: 16px;
+        }
+    #fruit{float: left;
+           width: 48%;}
+    #computer{float: right;
+              width: 48%;}
+    #stationary{clear: both;
+    }
+    h2{text-align: center;
+       color: crimson;
+       background-color:#f9ffc1;
+       width: fit-content;
+       margin: 5px auto;}
+
+h4{ background-color:#f9ffc1;
+  width: fit-content;}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to my store</h2>
+        <div id="fruit"class="item">
+            <h4>Fruits</h4>
+            <p id="fruitspara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis aliquid deserunt accusantium quis, laudantium veritatis quo in adipisci, quae molestiae vero tenetur repellendus reprehenderit dicta ex tempore? Incidunt aspernatur iusto voluptate. Molestias Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptate nihil aut, fugiat libero ducimus ipsa adipisci numquam eaque voluptatem autem ea itaque quisquam eligendi! Officiis labore odio suscipit totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nemo totam facere  </p>
+        </div>
+
+        <div id="computer"class="item">
+            <h4>Computers</h4>
+            <p id="computerspara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis aliquid deserunt accusantium quis, laudantium veritatis quo in adipisci, quae molestiae vero tenetur repellendus reprehenderit dicta ex tempore? Incidunt aspernatur iusto voluptate. Molestias,Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus non qui quis dolor alias ut, architecto veritatis quos consequuntur nesciunt eius explicabo dignissimos, Lorem ipsum dolor sit amet consectetur adipi </p>
+        </div>
+
+        <div id="stationary"class="item">
+            <h4>Stationaries</h4>
+            <p id="Fruitspara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis aliquid deserunt accusantium quis, laudantium veritatis quo in adipisci, quae molestiae vero tenetur repellendus reprehenderit dicta ex tempore? Incidunt aspernatur iusto voluptate. Molestias, inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, harum libero repellat omnis cupiditate dolorem enim adipisci quam voluptatibus deserunt explicabo illum dolorum quidem nobis aperiam perspiciatis eaque sapiente assumenda. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam sed aliquam reprehenderit nostrum quae. Quaerat obcaecati officia consequatur quidem tenetur, eum, architecto molestiae repellat corporis consequuntur ipsa sequi debitis minima incidunt laborum? Necessitatibus pariatur quo libero, id at commodi consequuntur magni esse omnis doloribus atque ratione labore blanditiis! Commodi cum ipsa natus ipsum minus inventore at rem corporis minima doloremque, eaque ea sint sit. </p>
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>

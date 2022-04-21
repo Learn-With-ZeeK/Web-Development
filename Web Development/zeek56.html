@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating DOM in javascript</title>
+</head>
+<body>
+    <div id="nav" class="container">
+        <ul id="list"><li>Home</li>
+        <li>About </li>
+        <li>Contact Us</li>
+        <li>More About Us</li></ul>
+    </div>
+    <div id="main" class="container">
+        <p>Another para</p>
+    </div>
+    
+</body>
+<script>
+     //Printing and manipulating element by id.
+    let nav= document.getElementById('nav');
+    console.log(nav);
+
+    let list=document.getElementById('list');
+    console.log(list);
+ // list.innerHTML="<li>Dyanmic Element</li>"        Writing this in console you can change entire list id 
+ 
+ 
+
+ //Printing and manipulating element by class. 
+ let containers= document.getElementsByClassName('container');
+    console.log(containers);
+//  containers[0]
+// <div id=​"nav" class=​"container">​…​</div>​     Result after writing containers[0] in console.
+// containers[1]
+//<div id=​"main" class=​"container">​…​</div>​   Result after writing containers[0] in console.
+
+
+
+let nav1= document.querySelector('#nav');
+console.log("Selecting through CSS",nav1);
+
+let nav2=document.querySelector('#nav li');
+console.log("Selecting through CSS",nav2);
+//Printing and manipulating element by CSS styling way.
+   
+</script>
+</html>

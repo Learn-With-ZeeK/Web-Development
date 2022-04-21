@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+                   font-size: 60px;
+                   text-align: center;
+                   display: none;
+                   }
+      @media (max-width:350px){
+        #box1{display: block;color: darkblue;background-color: cyan;}
+      }
+      @media (min-width:350px) and (max-width:500px){
+        #box2{display: block;color: rgb(148, 47, 0);background-color: rgb(251, 255, 0);}
+      }
+      @media (min-width:500px) and (max-width:1000px){
+        #box3{display: block;color: rgb(0, 90, 12);background-color: rgb(194, 255, 115);}
+      }
+      @media (min-width:1000px) and (max-width:10000px){
+        #box4{display: block;color: rgb(212, 0, 0);background-color: rgb(240, 186, 125);}
+      }
+  li{color: darkred;}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">I am an IPhone</div>
+    <div class="box" id="box2">I am a Mobile Phone</div>
+    <div class="box" id="box3">I am a Tablet Phone</div>
+    <div class="box" id="box4">I am a Desktop Computer</div>
+
+    </div>
+    <h1>Media Query</h1>
+    <ul style="font-size:30px;color: rgb(13, 13, 197); ">After inspecting this page in responsive design we see
+    <li>Width-(0 to 350 px) box1-(I am an IPhone) is displayed</li>
+    <li>Width-(350 to 500 px) box2-((I am a MobilePhone) is displayed</li>
+    <li>Width-(500 to 1000 px) box3-(I am a Tablet Phone) is displayed</li>
+    <li>Width-(1000 to 10000px) box4-(I am a Desktop Computer) displayed</li>
+       This is what we can accomplish by media Query
+     </ul>
+    
+</body>
+</html>

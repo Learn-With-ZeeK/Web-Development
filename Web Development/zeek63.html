@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Node js</title>
+</head>
+<body>
+    <h1>How to use node js in VSC?</h1>
+
+    <p>
+<ol>
+    <li>Open visual studio code <strong>by going inside Complete Web Development Part </strong> .</li>
+    <li>Node.js has been installed and working already.</li>
+    <li>Write your code you want to run in html file.</li>
+    <li>Create a js file.</li>
+    <li>In js file click on terminal(on top between run and help)</li>
+    <li>Now open new terminal.</li>
+    <li>This will appear PS C:\Users\abc\Desktop\webpart\Complete Web Development Part></li>
+    <li>Write  node zeek63.js</li>
+    <li>Code will work. see that by using console.log("abc");.</li>
+    <li>Go to node js download website and go to about.Link is given. <a href="https://nodejs.org/en/about/"target="_blank">CLICK HERE</a> </li>
+    <li>Copy the code.....<br>const http = require('http');
+
+        const hostname = '127.0.0.1'; <br>
+        const port = 3000;<br>
+        
+        const server = http.createServer((req, res) => {<br>
+          res.statusCode = 200;<br>
+          res.setHeader('Content-Type', 'text/plain');<br>
+          res.end('Hello World');<br>
+        });<br>
+        
+        server.listen(port, hostname, () => {<br>
+          console.log(`Server running at http://${hostname}:${port}/`);<br>
+        });</li>
+    <li>In res.end(``) Copy your entire html file in between ``.</li>
+    <li>In[res.setHeader('Content-Type', 'text/plain'); ] change plain to html. </li>
+    <li>Now your page runs on  127.0.0.1</li>
+    <li>Remember to delete or clear your terminal because one hostname one page only.</li>
+</ol>
+</p>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+        .container{border: darkblue solid 3px;height: 450px;width:900px;}
+        .cont1{height:450px;width:900px;border: darkblue solid 3px;}
+        .box{display: inline-block;
+              width: 150px;
+            height: 150px;
+        border: darkred solid 1px;
+    margin:5px ;}
+
+    #box3{position: relative;  /*  Positions the element relative to normal position leaves gap */
+           top: 34px;
+        left: 11px;} 
+
+     #box4{position:absolute; /*  Positions the element relative to position of its first element */
+          top: 34px;
+        left:11px;}
+    
+       #box5{position: fixed; /*  Always stay at the same position even if the page is scrolled down */
+           bottom: 34px;
+        right: 34px;}  
+    
+
+    </style>
+</head>
+<body >
+    <div class="container">
+    <div id="box1" class="box">1</div>
+    <div id="box2" class="box">2</div>
+    <div id="box3" class="box">3</div>
+    <div id="box4" class="box">4</div>
+    <div id="box5" class="box">5</div>
+</div>
+<h1>Original Positions of box 1,2,3,4,5 without positioning(Box3 we used position-relative)(Box4 we used position-absolute)(Box5 we used position-fixed)</h1>
+<div class="cont1">
+    <div  class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listening in JavaScript</title>
+    <style>
+        #btn{ margin-top: 20px;padding:5px 10px;background-color: rgb(243, 215, 178);color: rgb(114, 52, 8);border-radius: 10px;cursor: pointer;}
+    </style>
+</head>
+<body>
+    <h1>Events and Event listening in JavaScript</h1>
+    <div id="para">
+        The change in the state of an object is known as an <strong>Event.</strong>  When javascript code is included in HTML, js react over these events and allow the execution. This process of reacting over the events is called <strong>Event Handling.</strong>Thus, js handles the HTML events via <strong>Event Handlers.</strong>
+
+        <ul>Mouse Events <br>
+            Event Performed..../Event Handler..../Description
+            <li> click ..../onclick..../When mouse click on an element</li>
+            <li>mouseover..../onmouseover..../When the cursor of the mouse comes over the element</li>
+            <li>mouseout..../onmouseout..../When the cursor of the mouse leaves an element</li>
+            <li>mousedown..../onmousedown..../When the mouse button is pressed over the element</li>
+            <li>mouseup..../onmouseup..../When the mouse button is released over the element</li>
+            <li>mousemove..../onmousemove..../	When the mouse movement takes place.</li>
+             </ul>
+             Event Handler is onEvent-Performed.For Example-     <strong>click</strong> is <strong>Event-Performed</strong> and <strong>onclick</strong> is  <strong>Event Handler.</strong> <br>
+
+             Some other events like mouse events are form events(focus/submit/blur/change),keyboard events (Keydown & Keyup)and Window Events(load/unload/resize).
+
+             <h2>Through toggleHide code on clicking button we can show or hide para . </h2>
+             <h2>Through addEventListener we created code which gives alert when mouse is clicked inside para.</h2>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show or Hide Para</button>
+</body>
+<script>
+    //One way to create event
+    function toggleHide(){
+        let para= document.getElementById("para");
+        let btn= document.getElementById("btn");
+
+        if(para.style.display !="none"){
+            para.style.display ="none"  
+        }
+        else{para.style.display ="block" }
+}
+//Second way to create event
+//let para= document.getElementById("para");  Already written
+para.addEventListener('mousedown',function run(){
+
+    alert("Mouse is pressed inside para.");
+})
+
+</script>
+</html>

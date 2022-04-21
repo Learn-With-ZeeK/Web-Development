@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<!-- CSS Grid is a two-dimensional grid system used to work on the layout of UI elements and segments of a webpage. The Grid comprises horizontal and vertical lines to form rows and columns, much like a table -->
+
+<!-- CSS grids are for 2D layouts. It works with both rows and columns. Flexbox works better in one dimension only (either rows OR columns). It will be more time saving and helpful if you use both at the same time. -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids Columns</title>
+    <style>
+        section {
+            margin: 80px 0px;
+            border-top: rgb(9, 118, 155) solid 2px;
+            font-family: 'Playball', cursive;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        .item {
+            /* height: 100px;
+            width: 100px; */
+            background-color: rgb(253, 231, 201);
+            color: rgb(248, 0, 0);
+            border: darkblue solid 1px;
+        }
+
+        /* grid-template-columns: 300px 100px 100px; */
+
+        .container1 {
+            display: grid;
+            grid-template-columns: 300px 100px 100px;
+        }
+
+        .item1 {
+
+            background-color: rgb(253, 231, 201);
+            color: rgb(248, 0, 0);
+            border: darkblue solid 1px;
+        }
+
+        /* grid-template-columns:auto */
+        .container2 {
+            display: grid;
+            grid-template-columns: 300px auto 100px;
+        }
+
+        .item2 {
+
+            background-color: rgb(253, 231, 201);
+            color: rgb(248, 0, 0);
+            border: darkblue solid 1px;
+        }
+        /* grid-template-columns: fr; */
+        .container3 {
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+        }
+
+        .item3 {
+
+            background-color: rgb(253, 231, 201);
+            color: rgb(248, 0, 0);
+            border: darkblue solid 1px;
+        }
+
+        /* grid-template-columns: repeat(n, auto); */
+        .container4 {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 2rem;
+        }
+
+        .item4 {
+
+            background-color: rgb(253, 231, 201);
+            color: rgb(248, 0, 0);
+            border: darkblue solid 1px;
+        }
+    </style>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <section>
+        <h1>1-We develop grid by (display: grid;) in container. </h1>
+        <div class="container">
+
+            <!-- div.item{this is an item-$}*10 -->
+
+            <div class="item">this is item-1</div>
+            <div class="item">this is item-2</div>
+            <div class="item">this is item-3</div>
+            <div class="item">this is item-4</div>
+            <div class="item">this is item-5</div>
+            <div class="item">this is item-6</div>
+            <div class="item">this is item-7</div>
+            <div class="item">this is item-8</div>
+            <div class="item">this is item-9</div>
+            <div class="item">this is item-10</div>
+
+
+        </div>
+    </section>
+    <section>
+        <h1>2-Now we develop grid by grid-template-columns using (grid-template-columns: 300px 100px 100px;)</h1>
+        <div class="container1">
+
+            <!-- div.item{this is an item-$}*10 -->
+
+            <div class="item1">this is item-1</div>
+            <div class="item1">this is item-2</div>
+            <div class="item1">this is item-3</div>
+            <div class="item1">this is item-4</div>
+            <div class="item1">this is item-5</div>
+            <div class="item1">this is item-6</div>
+            <div class="item1">this is item-7</div>
+            <div class="item1">this is item-8</div>
+            <div class="item1">this is item-9</div>
+            <div class="item1">this is item-10</div>
+
+
+        </div>
+    </section>
+    <section>
+        <h1>3-Now we develop grid by grid-template-columns and (auto) using (grid-template-columns: 300px auto 100px;)
+        </h1>
+        <div class="container2">
+
+            <!-- div.item{this is an item-$}*10 -->
+
+            <div class="item2">this is item-1</div>
+            <div class="item2">this is item-2</div>
+            <div class="item2">this is item-3</div>
+            <div class="item2">this is item-4</div>
+            <div class="item2">this is item-5</div>
+            <div class="item2">this is item-6</div>
+            <div class="item2">this is item-7</div>
+            <div class="item2">this is item-8</div>
+            <div class="item2">this is item-9</div>
+            <div class="item2">this is item-10</div>
+
+
+        </div>
+    </section>
+    <section>
+        <h1>4-Now we develop grid by grid-template-columns and fr using (grid-template-columns: 1fr 4fr 1fr;)</h1>
+        <p>means out of 6 parts-1,4,1 parts are divided in respective manner</p>
+        <div class="container3">
+
+            <!-- div.item{this is an item-$}*10 -->
+
+            <div class="item3">this is item-1</div>
+            <div class="item3">this is item-2</div>
+            <div class="item3">this is item-3</div>
+            <div class="item3">this is item-4</div>
+            <div class="item3">this is item-5</div>
+            <div class="item3">this is item-6</div>
+            <div class="item3">this is item-7</div>
+            <div class="item3">this is item-8</div>
+            <div class="item3">this is item-9</div>
+            <div class="item3">this is item-10</div>
+
+
+        </div>
+    </section>
+    <section>
+        <h1>5-Now we develop grid by grid-template-columns and grid gap using {grid-template-columns:repeat(3,auto)} and
+            grid gap as 2rem</h1>
+        <div class="container4">
+
+            <!-- div.item{this is an item-$}*10 -->
+
+            <div class="item4">this is item-1</div>
+            <div class="item4">this is item-2</div>
+            <div class="item4">this is item-3</div>
+            <div class="item4">this is item-4</div>
+            <div class="item4">this is item-5</div>
+            <div class="item4">this is item-6</div>
+            <div class="item4">this is item-7</div>
+            <div class="item4">this is item-8</div>
+            <div class="item4">this is item-9</div>
+            <div class="item4">this is item-10</div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>

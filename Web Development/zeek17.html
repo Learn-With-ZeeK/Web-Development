@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+
+   <!-- MonteCarlo is imported through this link from google font removing this font we lose MonteCarlo font appearnace -->
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet"> 
+    <style>
+        #FirstDiv{font-family:'MonteCarlo', Verdana, Geneva, Tahoma, sans-serif;}
+        
+        p{font-family: Georgia, 'Times New Roman', Times, serif;/*It first check georgia then Times New Roman so on until it gets something*/
+          font-size: 13px;   /* 1px is 1/96 of an inch  */
+          line-height: 1em; /*1em is 1 multiplied by fontsize.line height means distance b/w para and consecutive element*/
+           font-weight: bold;/* thickness of alphabet*/
+           font-style: italic;/*Way of writing*/
+         }
+    </style>
+</head>
+<body>
+    <h4>CSS Fonts</h4>
+    
+    <div id="FirstDiv">Play with fonts in this div.This Font is in MonteCarlo fontfamily which we imported from google font.</div>
+    
+    <p>This is para in which we are applying different font attribute</p>
+    
+</body>
+</html>

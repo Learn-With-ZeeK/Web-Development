@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time-Out and interval</title>
+    <style>.container li{margin: 10px;}
+    .container  strong{color: rgb(255, 5, 5);display: block;}
+    #btn1{background-color: darkslategray;color: floralwhite;cursor: pointer;margin-bottom: 20px;border-radius: 6px;}
+    #btn1:hover{background-color: forestgreen;color: white;}
+    #Time{color: red;background-color: wheat;font-size: 20px;}
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Set Time-Out and interval using Timing Events.</h1>
+        <p>The window object allows execution of code at specified time intervals.
+
+            These time intervals are called timing events.</p>
+            <ul>The two key methods to use with JavaScript are:
+                <li> <strong>setTimeout(function, milliseconds)</strong>Executes a function, after waiting a specified number of milliseconds.</li>
+            <li><strong>setInterval(function, milliseconds)</strong>Same as setTimeout(), but repeats the execution of the function continuously</li>
+            Another thing in setInterval is:
+            <li> <strong>let myVar = setInterval(function, milliseconds);</strong><strong>
+                clearInterval(myVar);</strong>The clearInterval() method stops the executions of the function specified in the setInterval() method.</li>
+        </ul>
+        <p>Lets see how this button gives alert using timeout . 2 seconds after clicking the button.</p>
+        <button id="btn1"onclick="setTimeout(formSub, 2000,'Zeek','Bye')">Form Submit</button>
+
+
+  <p>We can see time by using setInterval which repeats function repeated after cetain interval.The time is <span id="Time"></span> </p>
+
+
+    </div>
+    
+</body>
+<script>
+    function formSub(name,greeting){
+        alert("Form has been submitted by"+" "+name+" "+greeting)
+    }
+    // setTimeout(formSub(), 2000,'Zeek','Bye') ...using brackets after formSub is wrong.No brackets inside setTimeOut.
+  function displayTime(){
+      let time= new Date;
+      console.log(Date);
+      document.getElementById("Time").innerHTML= time;}
+
+      setInterval(displayTime,1000);
+
+</script>
+</html>

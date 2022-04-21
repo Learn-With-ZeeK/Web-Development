@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in JS</title>
+     <style>
+  #time{display: block;text-align:center ; margin:100px;color: rgb(228, 13, 13);background-color: rgb(248, 170, 170);font-size: 50px;border-radius: 50px;}
+     </style>
+</head>
+<body>
+    <h1>Date and Time in JS</h1>
+    
+    <p id="time"></p>
+  
+</body>
+<script>
+    // let now= new Date();
+    // console.log("present date is "+now);
+
+    // let newDate= Date(year, month, date, hours, minutes, seconds, milliseconds)
+    // let newDate= new Date(3020,3,14,12,30,10,13)
+    // console.log("The date I set as new date is:"+ newDate)
+
+    // let yr= newDate.getFullYear();
+    // console.log("The year of new date is: "+ yr)
+
+    // let mn= newDate.getMonth();
+    // console.log("The month of new date is: "+ mn)
+
+    // let dt= newDate.getDate();
+    // console.log("The date no of new date is: "+ dt)
+
+    // let hr= newDate.getHours();
+    // console.log("The hour of new date is: "+ hr)
+
+    // let min= newDate.getMinutes();
+    // console.log("The minute of new date is: "+ min)
+
+    // let sec= newDate.getSeconds();
+    // console.log("The seconds of new date is: "+ sec)
+
+    // let misec= newDate.getMilliseconds();
+    // console.log("The milli-seconds of new date is: "+ misec)
+
+    function displayTime(){
+        let Time= new Date();
+        document.getElementById("time").innerHTML=Time;
+    }
+
+    setInterval(displayTime,1000);
+
+
+
+</script>
+</html>

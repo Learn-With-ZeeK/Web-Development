@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+
+<body>
+    <h1>Scope,If-else conditionals and Switch case in JavaScript</h1>
+    <p>This is my body.For JavaScript please right click on body then click on inspect and Go to console.</p>
+    <script>
+        var string1 = "this is my first var string1 ";
+        var string1 = "this is my second var string1";
+        console.log(string1);
+        //  We see that when we print string1,string1 that comes later is printed i.e(override) thats called scope of variable which is global .That means when you declare it once in that javascript if that variable comes later it will take later value.
+
+        const a = "This cannot be changed";
+        // a="It cannot be changed";
+        console.log(a);
+        // constant cannot be changed once defined.
+
+        let b = "u";
+        {
+            let b = "u6";
+            console.log(b);
+        }
+        console.log(b);
+        // Scope of let is block which means that  it take value of the block in which it belongs.In this case when inside block print u6  when  outside prints u  . 
+
+        var d = "Now lets see If-else statement";
+        console.log(d);
+
+        let age = 12;
+        console.log("Age:" + age)//This is NOT necessary for if-else just for seeing age on console.You will see corresponding to age  which block is executed.
+
+        //(age=12),(age==12) are two different things in age=12 you are assigning age as value 12,in age==12 you are comparing value of age to 12.
+
+        if (age > 18) {
+            console.log("You are an adult.You can drive a car. ")
+        }
+        else if (age < 18, age > 12) {
+            console.log("You are teenager.You can drive a motorcycle.")
+        }
+        else if (age == 12) {
+            console.log("You are 12 years old.You can drive cycle")
+        }
+        if (age < 12) {
+            console.log("You are a child.You can do nothing.")
+        };
+        var p = "Lets see switch case statement";
+        console.log(p);
+        
+        const pens = 7;
+
+        switch (pens) {
+            case 10:
+                console.log("You have 10 pens.")
+                break;
+            case 9:
+                console.log("You have 9 pens.")
+                break;
+            case  8:
+                console.log("You have 8 pens.")
+                break;
+            default:
+                console.log("You dont have 8,9 or 10 pens")
+                break;
+        }
+
+
+    </script>
+</body>
+
+</html>

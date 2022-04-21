@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth psuedo child selector</title>
+    <style>
+        .form {width: 600px;margin: auto;}
+        input {display: block;}
+        a {width: 600px;margin: auto;display: block;}
+         
+        /* We can select an anchor with specified target like this */
+        a[target="_blank"]  {background-color: rgb(247, 162, 162);}
+        a[target="_self"]  {background-color:yellow;}
+
+          /* We can select an input with specified type like this */
+        input[type="password"]  {font-size: 34px;background-color: thistle;}
+
+         /* We can select a specified styling for certain elements that follow a pattern like 2n+1 where n=0,1,2,3 then elements are 1,3,5,7,etc
+         in this manner*/
+        li:nth-child(4){color: yellowgreen;}
+        li:nth-child(2n+1){color: red;}
+
+    </style>
+</head>
+<body>
+     
+    <a href="http://google.com"target="_blank">Go to Google</a>
+    <a href="http://facebook.com"target="_self">Go to Facebook</a>
+
+    <div class="form">
+    <form action="#"class="formAction">
+        <input type="text"placeholder="Enter Your Name">
+        <input type="password"placeholder="Enter Your Password">
+        <input type="email" placeholder="Enter Your Email">
+        <input type="submit" >
+    </form>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+        <li>Item6</li>
+        <li>Item7</li>
+        <li>Item8</li>
+        <li>Item9</li>
+        <li>Item10</li>
+
+    </ul>
+</div>
+
+</body>
+</html>
