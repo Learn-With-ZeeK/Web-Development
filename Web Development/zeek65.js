@@ -13,4 +13,4 @@ let text = fs.readFile("zeek.txt","utf8",(err,data)=>{
 
 console.log("This is a message");
 
-//In terminal "This is a message" is written first but it comes later in console.log that means readFile is asynchronous but readFileSync is Synchronous means follow line by line execution
+//In terminal "This is a message"  is written first but it comes later in console.log that means readFile is asynchronous but readFileSync is Synchronous means follow line by line execution
