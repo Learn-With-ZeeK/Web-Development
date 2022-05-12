@@ -23,7 +23,7 @@ greet(name3);
 function sum(a,b,c){
     console.log("....................")
     d=a+b+c;
-    return d;  //After return no code  will be executed.
+    return d;   //After return no code  will be executed.
 }
 let returnValue = sum(1,2,30);
 console.log("The sum of these numbers are: "+returnValue)
